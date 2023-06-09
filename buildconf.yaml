@@ -1,12 +1,13 @@
 # Recommended information
 Authors:
     - Matías Hurtado
+    - Pierre Padilla-Huamantinco
 
-Affiliation: LIBRE hub
+Affiliation: Latin American Hub for Bioimaging Through Open Hardware
 
-#License: CERN-OHL-1.2
+License: CERN-OHL-1.2
 
-Email: matias.hurtado1@mail.udp.cl
+Email: librehub@uc.cl
 
 
 #Uncomment below to add custom categories
@@ -22,7 +23,7 @@ CustomCategories:
         DisplayName: Laser cut parts
     stl:
         Reuse: False
-        DisplayName: Stl's
+        DisplayName: STL
 
 #Uncomment below to set a custom default category
 #DefaultCategory: printedtool
@@ -38,4 +39,3 @@ CustomCategories:
 
 #Uncomment below to disable fussy warnings
 #Fussy: False
-
