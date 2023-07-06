@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Strobe-Enhanced Microscope Station</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+
+    <link href="./static/style.css" rel="stylesheet">
+            <link href="./assets/style.css" rel="stylesheet">
+        </head>
+<body>
+<header class="site-header">
+    <div class="wrapper">
+        <div class=header-text>
+   
+    <h1 class="site-title">Strobe-Enhanced Microscope Station</h1>
+   
+    <p class="author">by Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="affiliation">Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Strobe-Enhanced Microscope Station
+    </a>
+</li>
+<li class="not-active">
+    <a class="not-active" href="./2-level-station.html">
+        Build the 2-levels microscope station
+    </a>
+    </li>
+<li class="active">
+    <a class="active" href="./software-installation.html">
+        Software Installation
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./usage.html">
+        Use your Station
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./troubleshooting.html">
+        Troubleshooting
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./knowledge_base.html">
+        Knowledge base
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="software-installation">Software Installation</h1>
+<h2 class="page-step" id="write-your-sd-card">Step 1: Write your SD Card</h2>
+<p>You must install an operating system first to set up and use the Raspberry Pi board. Raspbian or Raspberry Pi OS is a Debian-based computer operating system for Raspberry Pi board. There are several OS versions for the workstation. Raspberry Pi OS 32-bit must be installed.</p>
+<div class="info-block">
+<p><strong>Coming soon:</strong> a pre-built SD card image that contains a full operating system with all the necessary software pre-installed. </p>
+</div>
+<p><strong>Before you start, please get:</strong></p>
+<ul>
+<li>A computer with Internet</li>
+<li>A MicroSD card</li>
+<li>A SD card reader (OPTIONAL) </li>
+<li>A SD card adapter (OPTIONAL)</li>
+</ul>
+<p><strong>To write your MicroSD card:</strong></p>
+<ul>
+<li>Download the latest .img file from <a href="https://www.raspberrypi.com/software/operating-systems/" target="_blank" title="">Raspberry Pi website</a>.</li>
+<li>Use an adapter to connect your MicroSD card to your computer.</li>
+<li>Use a program such as <a href="https://www.balena.io/etcher" target="_blank" title="">Etcher</a> or <a href="https://www.raspberrypi.com/software/" target="_blank" title="">Raspberry Pi imager</a> to flash the .img file onto your MicroSD card.</li>
+</ul>
+<p>More detailed information on installing a Raspberry Pi operating system image onto an SD card can be found <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system" target="_blank" title="">here on the Raspberry Pi website</a>.</p>
+<p><strong>First boot:</strong></p>
+<p>Connect your Pi to a display, mouse, keyboard, and power. When the Pi first boots, you will be asked to complete a quick setup before rebooting.</p>
+<p>Once you have installed and configured the Raspberry Pi OS, you can install the User Interface App.</p>
+<h2 class="page-step" id="enable-ssh-spi-and-camera">Step 2: Enable SSH, SPI, and Camera</h2>
+<p><strong>Method 1:</strong> Use the graphical tool "Raspberry Pi Configuration". This is found under Menu &gt; Preferences &gt; Raspberry Pi Configuration. Then you must select the "Interfaces" tab and set SSH, SPI, and Camera to "Enabled".</p>
+<p><strong>Method 2:</strong> From the command line or Terminal window, start by running <code>sudo raspi-config</code>. This will launch the raspi-config utility:</p>
+<ul>
+<li>Select “Interfacing Options”.</li>
+<li>Highlight the "SSH" option and activate <strong>Select</strong>.</li>
+<li>Select and activate <strong>Yes</strong>.</li>
+<li>Highlight and activate <strong>Ok</strong>.</li>
+<li>When prompted to reboot highlight and activate <strong>Yes</strong>.</li>
+<li>Repeat the previous steps to enable "SPI" and "Camera".</li>
+</ul>
+<h2 class="page-step" id="edit-configtxt">Step 3: Edit config.txt</h2>
+<p>We need to edit the config file <code>sudo nano /boot/config.txt</code></p>
+<p>Add <code>disable_camera_led=2</code> at the end of the file  </p>
+<p>Then, save it with <code>CTL+O</code> &gt; <code>Enter</code> &gt; <code>CTL+X</code> and reboot the system <code>sudo reboot</code>.</p>
+<h2 class="page-step" id="plug-in-camera">Step 4: Plug in Camera</h2>
+<p>How to connect properly a Raspberry Pi camera and more information about the sensor can be found <a href="https://www.raspberrypi.com/documentation/accessories/camera.html" target="_blank" title="">here on the Raspberry Pi website</a>. Use <code>vcgencmd get_camera</code> to verify if your camera was detected and <code>raspistill -o test.jpg</code> if it works.</p>
+<div class="caution-block">
+<p>Cameras are sensitive to static. Earth yourself before handling the PCB. A sink tap or similar should suffice if you don’t have an earthing strap.</p>
+</div>
+<h2 class="page-step" id="install-libraries">Step 5: Install Libraries</h2>
+<p>The Python libraries that allow the Webb App to work on your Pi are the followings:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Flask</span><span class="w"> </span><span class="mf">1.0.2</span>
+<span class="n">Flask</span><span class="o">-</span><span class="n">socketio</span><span class="w"> </span><span class="mf">4.3.2</span>
+<span class="n">Werkzeug</span><span class="w"> </span><span class="mf">0.14.1</span>
+<span class="n">Jinja2</span><span class="w"> </span><span class="mf">2.10</span>
+<span class="n">Markupsafe</span><span class="w"> </span><span class="mf">1.1.0</span>
+<span class="n">itsdangerous</span><span class="w"> </span><span class="mf">0.24</span>
+<span class="n">eventlet</span><span class="w"> </span><span class="mf">0.33.3</span>
+<span class="n">spidev</span><span class="w"> </span><span class="mf">3.6</span>
+<span class="n">RPi</span><span class="o">.</span><span class="n">GPIO</span><span class="w"> </span><span class="mf">0.7.1</span>
+<span class="n">picamera</span><span class="w"> </span><span class="mf">1.13</span>
+<span class="n">Pillow</span><span class="w"> </span><span class="mf">9.4.0</span>
+</code></pre></div>
+
+<p><strong>Method 1:</strong> Use the terminal window and install each of the above libraries with <code>pip install</code>. Example: <code>pip install Flask==1.0.2</code></p>
+<p><strong>Method 2:</strong> Download <a href="https://github.com/wenzel-lab/open-microfluidics-workstation/blob/master/module-pi/requirements.txt" target="_blank" title="">requirements.txt</a> file and copy it into your Home folder on your Pi. Use the terminal window and install all the libraries with <code>pip install -r requirements.txt</code> </p>
+<div class="info-block">
+<p>Use <code>pip list</code> to verify which modules are installed and their versions. </p>
+</div>
+<h2 class="page-step" id="set-up-the-gpio-pin-states">Step 6: Set up the GPIO pin states</h2>
+<p>GPIO pins states must be modified during the bootup sequence to use them with the peripherals of the workstation. Our own custom <code>dt-blob.bin</code> file specifies which pin states should change:</p>
+<ul>
+<li>Download the <a href="https://github.com/wenzel-lab/open-microfluidics-workstation/blob/master/module-pi/pi_config/dt-blob.dts" target="_blank" title="">dts file</a> and copy it into your Home folder.</li>
+<li>Install the Device Tree compiler by running <code>sudo apt install device-tree-compiler</code></li>
+<li>Run the <code>dtc</code> command <code>sudo dtc -I dts -O dtb -o /boot/dt-blob.bin dt-blob.dts</code></li>
+</ul>
+<div class="info-block">
+<p>It is very useful to use the command <code>raspi-gpio get</code> to look at the setup of the GPIO pins to check that they are as you expect.</p>
+</div>
+<h2 class="page-step" id="run-the-ui-app">Step 7: Run the UI App</h2>
+<p>Download the <a href="https://github.com/wenzel-lab/open-microfluidics-workstation/blob/master/module-pi/webapp.zip" target="_blank" title="">zip file</a>, copy it, and extract the folder into your Home folder.</p>
+<p><strong>Method 1:</strong> Go to the web app folder and double click on <code>pi_webapp.py</code>. A programming editor will open the Python file, then run the code.</p>
+<p><strong>Method 2:</strong> Use the terminal window, then <code>cd webapp</code> and <code>python pi_webapp.py</code></p>
+<p>Use a browser and go to <code>https://0.0.0.0:5000</code> to use the Web App</p>
+<h2 class="page-step" id="run-the-ui-app-on-startup">Step 8: Run the UI App on startup</h2>
+<p>Once the folder and Python files are in your Home folder, configure the Raspberry Pi to run the web app on startup.</p>
+<p>We must edit the <code>rc.local</code> file <code>sudo nano /etc/rc.local</code></p>
+<p>Add <code>sudo -H -u pi python3 /home/pi/webapp/pi_webapp.py &amp;</code> before <code>exit 0</code> on the file</p>
+<p>Then, save it with <code>CTL+O</code> &gt; <code>Enter</code> &gt; <code>CTL+X</code>, and reboot the system <code>sudo reboot</code>.</p>
+<p>When the Raspberry Pi boot again, use a browser and go to <code>https://0.0.0.0:5000</code> to open the Web App.</p>
+<div class="info-block">
+<p><strong>Note:</strong> While the program is running in the background, you will not be able to use the camera. First, you must kill the process related to the program. To identify the process (number of PID), use <code>ps aux</code>. Then, use <code>sudo kill -9 PID</code> where <code>PID</code> is the process. If you want to run the program again, repeat <strong>STEP 6</strong> or reboot the system.</p>
+</div>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2023 Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="email">Contact: <a href="mailto:librehub@uc.cl">librehub@uc.cl</a></p>
+    <p class="license">Strobe-Enhanced Microscope Station is released under <a href="license.html">CERN-OHL-1.2</a>.</p>
+
+    </div>
+</footer></body>
+</html>

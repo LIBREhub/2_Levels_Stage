@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Strobe-Enhanced Microscope Station</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+
+    <link href="./static/style.css" rel="stylesheet">
+            <link href="./assets/style.css" rel="stylesheet">
+        </head>
+<body>
+<header class="site-header">
+    <div class="wrapper">
+        <div class=header-text>
+   
+    <h1 class="site-title">Strobe-Enhanced Microscope Station</h1>
+   
+    <p class="author">by Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="affiliation">Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Strobe-Enhanced Microscope Station
+    </a>
+</li>
+<li class="active">
+    <a class="active" href="./2-level-station.html">
+        Build the 2-levels microscope station
+    </a>
+        <ul class="sub-nav-list">
+                <li>
+            <a class="active" href="./2-level-station_BOM.html">
+                Bill of Materials
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./printing.html">
+                Print the plastic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./laser-cutting.html">
+                Laser cut the acrylic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./assemble-focus-mechanism.html">
+                Assemble the focus mechanism
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./basic-optics-module.html">
+                Assemble the basic optics module
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-top-plate.html">
+                Attach parts to the top plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-bottom-plate.html">
+                Attach parts to the bottom plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./illumination.html">
+                Assemble the illumination
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./wiring.html">
+                Complete the wiring
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./finished.html">
+                Assembly complete
+            </a>
+        </li>
+            </ul>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./software-installation.html">
+        Software Installation
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./usage.html">
+        Use your Station
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./troubleshooting.html">
+        Troubleshooting
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./knowledge_base.html">
+        Knowledge base
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="bill-of-materials">Bill of Materials</h1>
+<p>Download this as a <a href="2-level-station_BOM.csv">CSV file</a></p>
+<h3 id="tool">Tools</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/tools/pozidrive_1_screwdriver.html">#1 pozidrive screwdriver</a> </li>
+<li>1 <a Class="bom" href="parts/tools/2.5mmBallEndAllenKey.html">2.5mm Ball-end Allen key</a> </li>
+<li>1 <a Class="bom" href="parts/tools/crimper.html">Crimper</a> </li>
+<li>1 <a Class="bom" href="parts/tools/laser-cutting-machine.html">Laser cutting machine</a> </li>
+<li>1 <a Class="bom" href="parts/tools/m3-tap.html">M3 tap</a> </li>
+<li>1 <a Class="bom" href="parts/tools/needle-nose_plier.html">Needle-nose plier</a> </li>
+<li>1 <a Class="bom" href="parts/tools/pi_camera_lens_tool.html">Pi Camera lens tool</a>    - This should come with the <a href="parts/elect/rpi-camera-v2.html">Raspberry Pi Camera Module v2</a>.  If it is missing, you can 3D print a workaround lens remover.</li>
+<li>1 <a Class="bom" href="parts/tools/precision-wire-cutters.html">Precision wire cutter</a> </li>
+<li>1 <a Class="bom" href="parts/tools/rep-rap.html">RepRap-style printer</a> </li>
+<li>1 <a Class="bom" href="parts/tools/soldering-iron.html">Soldering iron</a> </li>
+<li>1 <a Class="bom" href="parts/tools/tap-wrench.html">Tap wrench</a> </li>
+<li>1 <a Class="bom" href="parts/tools/utility-knife.html">Utility knife</a>    - Not a scalpel!</li>
+</ul>
+<h3 id="material">Materials</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/materials/acrylic-sheet.html">52x18x0.5cm Acrylic sheet</a> </li>
+<li>50 g of <a Class="bom" href="parts/materials/black_pla_filament.html">Black PLA filament</a> </li>
+<li>205 g of <a Class="bom" href="parts/materials/pla_filament.html">PLA filament</a>    - Of any colour you want</li>
+</ul>
+<h3 id="consumable">Consumables</h3>
+<ul>
+<li>1 drop of <a Class="bom" href="parts/consumables/light-oil.html">light oil</a> </li>
+<li>a little <a Class="bom" href="parts/consumables/tap-lubricant.html">Lubricant</a> </li>
+</ul>
+<h3 id="optical">Optical Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/optics/8.7-20mm-circular-lens.html">8.7° 20 mm Circular Beam Optic</a> </li>
+</ul>
+<h3 id="electronic">Electronic Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/elect/2pin-DuPont-female-housing.html">2 pin Du Pont connector female housing</a> </li>
+<li>1 <a Class="bom" href="parts/elect/30x30x10mm-heatsink.html">30x30x10mm Heat sink</a> </li>
+<li>1 <a Class="bom" href="parts/elect/double-sided-adhesive-tape.html">Double-sided self adhesive tape</a> </li>
+<li>1 <a Class="bom" href="parts/elect/double-sided-thermal-tape.html">Double-sided thermal tape</a> </li>
+<li>1 <a Class="bom" href="parts/elect/high-power-star-LED.html">High-power star LED</a> </li>
+<li>2 <a Class="bom" href="parts/elect/male-crimp-pin.html">Male Crimp Pin</a> </li>
+<li>1 <a Class="bom" href="parts/elect/rpi-camera-ribbon-cable.html">Pi camera ribbon cable</a> </li>
+<li>1 <a Class="bom" href="parts/elect/pi-hat.html">Pi Hat</a> </li>
+<li>1 <a Class="bom" href="parts/elect/rpi-v4.html">Raspberry Pi</a> </li>
+<li>1 <a Class="bom" href="parts/elect/rpi-camera-v2.html">Raspberry Pi Camera Module v2</a> </li>
+<li>1 <a Class="bom" href="parts/elect/rpi-power-supply.html">Raspberry Pi Power Supply</a> </li>
+<li>1 <a Class="bom" href="parts/elect/strobe-cable.html">Strobe Cable</a> </li>
+<li>1 <a Class="bom" href="parts/elect/strobe-module.html">Strobe Module</a> </li>
+<li>1 <a Class="bom" href="parts/elect/strobe-power-supply.html">Strobe Power Supply</a> </li>
+<li>1 <a Class="bom" href="parts/elect/voltage-regulator.html">Voltage regulator</a> </li>
+</ul>
+<h3 id="mechanic">Mechanical Components</h3>
+<ul>
+<li>7 <a Class="bom" href="parts/mech/heat-set_insert.html">Heat-set insert</a> </li>
+<li>1 <a Class="bom" href="parts/mech/m3-brass_nut.html">M3 brass nut</a> </li>
+<li>9 <a Class="bom" href="parts/mech/m3_nut.html">M3 nut</a> </li>
+<li>2 <a Class="bom" href="parts/mech/m3-washer.html">M3 washers</a> </li>
+<li>11 <a Class="bom" href="parts/mech/m3x10_screw.html">M3x10mm cap head screw</a> </li>
+<li>4 <a Class="bom" href="parts/mech/m3x15_screw.html">M3x15mm cap head screw</a> </li>
+<li>1 <a Class="bom" href="parts/mech/m3x20_screw.html">M3x20mm cap head screw</a> </li>
+<li>1 <a Class="bom" href="parts/mech/m3x25mm-hex-head-screw.html">M3x25mm hex head screw</a> </li>
+<li>2 <a Class="bom" href="parts/mech/m3x6_screw.html">M3x6mm cap head screw</a> </li>
+<li>4 <a Class="bom" href="parts/mech/SelfTap_PoziPan_No2x6.5_SS.html">No 2 6.5mm self tapping screws</a> </li>
+<li>1 <a Class="bom" href="parts/mech/o-ring.html">O-ring</a> </li>
+</ul>
+<hr />
+<p><a href="2-level-station.html">Previous page</a> | <a href="printing.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2023 Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="email">Contact: <a href="mailto:librehub@uc.cl">librehub@uc.cl</a></p>
+    <p class="license">Strobe-Enhanced Microscope Station is released under <a href="license.html">CERN-OHL-1.2</a>.</p>
+
+    </div>
+</footer></body>
+</html>
