@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Strobe-Enhanced Microscope Station</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+
+    <link href="./static/style.css" rel="stylesheet">
+            <link href="./assets/style.css" rel="stylesheet">
+        </head>
+<body>
+<header class="site-header">
+    <div class="wrapper">
+        <div class=header-text>
+   
+    <h1 class="site-title">Strobe-Enhanced Microscope Station</h1>
+   
+    <p class="author">by Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="affiliation">Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Strobe-Enhanced Microscope Station
+    </a>
+</li>
+<li class="active">
+    <a class="active" href="./2-level-station.html">
+        Build the 2-levels microscope station
+    </a>
+        <ul class="sub-nav-list">
+                <li>
+            <a class="not-active" href="./2-level-station_BOM.html">
+                Bill of Materials
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./printing.html">
+                Print the plastic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./laser-cutting.html">
+                Laser cut the acrylic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./assemble-focus-mechanism.html">
+                Assemble the focus mechanism
+            </a>
+        </li>
+                <li>
+            <a class="active" href="./basic-optics-module.html">
+                Assemble the basic optics module
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-top-plate.html">
+                Attach parts to the top plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-bottom-plate.html">
+                Attach parts to the bottom plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./illumination.html">
+                Assemble the illumination
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./wiring.html">
+                Complete the wiring
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./finished.html">
+                Assembly complete
+            </a>
+        </li>
+            </ul>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./software-installation.html">
+        Software Installation
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./usage.html">
+        Use your Station
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./troubleshooting.html">
+        Troubleshooting
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./knowledge_base.html">
+        Knowledge base
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="assemble-the-basic-optics-module">Assemble the basic optics module</h1>
+<div class="pagebom">
+<h3 id="tool">Tools</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/tools/pozidrive_1_screwdriver.html">#1 pozidrive screwdriver</a> </li>
+<li>1 <a Class="bom" href="parts/tools/pi_camera_lens_tool.html">Pi Camera lens tool</a>    - This should come with the <a href="parts/elect/rpi-camera-v2.html">Raspberry Pi Camera Module v2</a>.  If it is missing, you can 3D print a workaround lens remover.</li>
+</ul>
+<h3 id="printedpart">Printed Parts</h3>
+<ul>
+<li>1 <a Class="bom" href="models/lens-spacer.html">Lens spacer</a> </li>
+<li>1 <a Class="bom" href="models/camera-platform.html">Pi Camera platform</a> </li>
+</ul>
+<h3 id="electronic">Electronic Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/elect/rpi-camera-ribbon-cable.html">Pi camera ribbon cable</a> </li>
+<li>1 <a Class="bom" href="parts/elect/rpi-camera-v2.html">Raspberry Pi Camera Module v2</a> </li>
+</ul>
+<h3 id="mechanic">Mechanical Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/mech/m3_nut.html">M3 nut</a> </li>
+<li>1 <a Class="bom" href="parts/mech/m3x10_screw.html">M3x10mm cap head screw</a> </li>
+<li>4 <a Class="bom" href="parts/mech/SelfTap_PoziPan_No2x6.5_SS.html">No 2 6.5mm self tapping screws</a> </li>
+</ul>
+</div>
+<p>The imaging optics for this version of the workstation consist of an the Raspberry pi camera and the lens from the camera. To create a microscope the lens is separated from the camera. This makes quite a good microscope objective with a field of view about 950μm across.</p>
+<h2 class="page-step" id="visually-inspect-the-lens-spacer">Step 1: Visually inspect the lens spacer</h2>
+<p>Take the <a href="models/lens-spacer.html">lens spacer</a> and confirm that:</p>
+<ul>
+<li>It has been printed in black.</li>
+<li>It is dust free (You can blow air through to clean it)</li>
+<li>The central shaft is not obstructed by strings of plastic.</li>
+</ul>
+<h2 class="page-step" id="remove-pi-camera-lens">Step 2: Remove Pi Camera Lens</h2>
+<div class="caution-block">
+<p><strong>Caution!</strong></p>
+<p>The camera board is static sensitive.</p>
+</div>
+<ul>
+<li>Before touching the Pi Camera touch a metal earthed object. If you own one, consider wearing and anti-static strap.</li>
+<li>Take the <a href="parts/elect/rpi-camera-v2.html">Pi Camera</a> out of the package. Make sure to <strong>hold it only by the sides of the board</strong>.</li>
+<li>Take the protective film off the lens.</li>
+<li>Take the <a href="parts/tools/pi_camera_lens_tool.html">Pi Camera lens tool</a> and place it over the lens</li>
+<li>Slowly unscrew the lens (About 4 full turns of the tool)</li>
+<li>Carefully lift off the lens.</li>
+<li>Save the lens and the camera, we use both this version of the microscope.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/picam1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/picam2.png" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/picam3.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/picam1.png" alt=""/></div>
+<h2 class="page-step" id="push-fit-the-lens">Step 3: Push-fit the lens</h2>
+<ul>
+<li>Place the pi camera lens on a clean surface with the side that was opposite to the camera sensor on the bottom.</li>
+<li>Push the lens spacer down onto the lens until it clicks into place.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/lens-holder-1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/lens-holder-2.png" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/lens-holder-3.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show1" src="images/lens-holder-1.png" alt=""/></div>
+<h2 class="page-step" id="attach-the-pi-camera">Step 4: Attach the Pi Camera</h2>
+<ul>
+<li>Take the Pi Camera and place it ontop of the <a href="models/camera-platform.html">pi camera platform</a>.</li>
+<li>Place the lens spacer over the picamera</li>
+<li>Use four <a href="parts/mech/SelfTap_PoziPan_No2x6.5_SS.html">No 2 6.5mm self tapping screws</a> to secure the three parts together using a <a href="parts/tools/pozidrive_1_screwdriver.html">#1 pozidrive screwdriver</a></li>
+<li>Take care to not over torque the screws.</li>
+</ul>
+<p><img alt="" src="images/low_cost_optics_assembly_camera.png" title="" /></p>
+<h2 class="page-step" id="attach-the-mounting-screw">Step 5: Attach the mounting screw</h2>
+<ul>
+<li>Take an <a href="parts/mech/m3_nut.html">M3 nut</a> and push it into the nut trap from the top</li>
+<li>Take an <a href="parts/mech/m3x10_screw.html">M3x10mm cap head screw</a> and screw it into the nut.</li>
+<li>Only screw it in a couple of turns. About 5 mm of thread should still be visible</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/mount-screw.png" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/mount-screw-1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/mount-screw-2.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show2" src="images/mount-screw.png" alt=""/></div>
+<h2 class="page-step" id="connect-ribbon-cable">Step 6: Connect ribbon cable</h2>
+<ul>
+<li>Take the <a href="parts/elect/rpi-camera-ribbon-cable.html">Pi Camera ribbon cable</a></li>
+<li>Pull the catch forward on the exposed Pi Camera connector</li>
+<li>Insert the ribbon cable with the contacts towards the board</li>
+<li>Close the catch on the connector</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/low_cost_optics_assembly_ribbon.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/low_cost_optics_assembly_ribbon_1.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/low_cost_optics_assembly_ribbon_2.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show3" src="images/low_cost_optics_assembly_ribbon.jpg" alt=""/></div>
+<p>Set the <a name="output__complete-optics-module"></a>complete optics module aside in a safe place.</p>
+<hr />
+<p><a href="assemble-focus-mechanism.html">Previous page</a> | <a href="attach-parts-to-top-plate.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2023 Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="email">Contact: <a href="mailto:librehub@uc.cl">librehub@uc.cl</a></p>
+    <p class="license">Strobe-Enhanced Microscope Station is released under <a href="license.html">CERN-OHL-1.2</a>.</p>
+
+    </div>
+</footer></body>
+</html>
