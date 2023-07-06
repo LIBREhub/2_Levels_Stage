@@ -1,5 +1,0 @@
-# Piler
-
-
-![](images/pliersLCC.png)
-

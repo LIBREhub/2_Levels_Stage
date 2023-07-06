@@ -1,5 +1,0 @@
-# Screwdriver
-
-
-![](images/screwdriver.jpg)
-

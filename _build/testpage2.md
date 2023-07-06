@@ -26,13 +26,7 @@
 * 1 [soldering iron]{: Class="bom"} 
 
 
-### Printed tools
-
-* 1 [gripper]{: Class="bom"} 
-* 1 [nut pusher]{: Class="bom"} 
-
-
-### Printed parts
+### Printed Parts
 
 * 1 [actuator foot]{: Class="bom"} 
 * 1 [base of the light holder]{: Class="bom"} 
@@ -45,6 +39,12 @@
 * 1 [slide knob]{: Class="bom"} 
 * 1 [sliding piece of the light holder]{: Class="bom"} 
 * 4 [upper legs]{: Class="bom"} 
+
+
+### Printed Tools
+
+* 1 [gripper]{: Class="bom"} 
+* 1 [nut pusher]{: Class="bom"} 
 
 
 ### Laser cut parts

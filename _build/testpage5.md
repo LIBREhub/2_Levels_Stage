@@ -18,7 +18,7 @@
 * 1 [M3 HEX key]{: Class="bom"} 
 
 
-### Printed parts
+### Printed Parts
 
 * 1 [base piece]{: Class="bom"} 
 * 1 [screen cover]{: Class="bom"} 

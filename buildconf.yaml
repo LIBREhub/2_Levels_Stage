@@ -3,7 +3,7 @@ Authors:
     - Matías Hurtado
     - Pierre Padilla-Huamantinco
 
-Affiliation: Latin American Hub for Bioimaging Through Open Hardware
+Affiliation: Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)
 
 License: CERN-OHL-1.2
 
@@ -12,18 +12,47 @@ Email: librehub@uc.cl
 
 #Uncomment below to add custom categories
 CustomCategories:
-    printedtool:
-        Reuse: True
-        DisplayName: Printed tools
-    printedpart:
-        Reuse: False
-        DisplayName: Printed parts
-    lasercutpart:
-        Reuse: False
-        DisplayName: Laser cut parts
-    stl:
-        Reuse: False
-        DisplayName: STL
+    PrintedPart:
+        Reuse: false
+        DisplayName: Printed Parts
+    PrintedTool:
+        Reuse: true
+        DisplayName: Printed Tools
+    LasercutPart:
+        Reuse: true
+        DisplayName: Laser cut Parts
+    Material:
+        Reuse: false
+        DisplayName: Materials
+    Consumable:
+        Reuse: false
+        DisplayName: Consumables
+    Optical:
+        Reuse: false
+        DisplayName: Optical Components
+    Electronic:
+        Reuse: false
+        DisplayName: Electronic Components
+    Mechanic:
+        Reuse: false
+        DisplayName: Mechanical Components
+
+DefaultCategory: Part
+
+Navigation:
+  - Link: 2-level-station.md
+    Title: Build the 2-levels microscope station
+  - Link: software-installation.md
+    Title: Software Installation
+  - Link: usage.md
+    Title: Use your Station
+ # - Link: customisation.md
+ #   Title: Customisations and alternatives
+  - Link: troubleshooting.md
+    Title: Troubleshooting
+  - Link: knowledge_base.md
+    Title: Knowledge base
+
 
 #Uncomment below to set a custom default category
 #DefaultCategory: printedtool

@@ -17,4 +17,4 @@
 
 ---
 
-[Previous page](index_BOM.md) | [Next page](testpage2.md)
+[Previous page](laser-cutting.md) | [Next page](testpage2.md)

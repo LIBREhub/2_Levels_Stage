@@ -8,6 +8,7 @@ Download this as a [CSV file](index_BOM.csv)
 
 * 1 [7-inch capacitive touch screen for Raspberry Pi]{: Class="bom"} 
 * 6 [heat inserts]{: Class="bom"} 
+* a little [lubricant]{: Class="bom"} 
 * 14 [M3 nut]{: Class="bom"} 
 * 15 [M3x10 screw]{: Class="bom"} 
 * 4 [M3x15 screw]{: Class="bom"} 
@@ -20,19 +21,19 @@ Download this as a [CSV file](index_BOM.csv)
 
 ### Tools
 
+* 1 [Laser cutting machine]{: Class="bom"} 
 * 1 [M3 HEX key]{: Class="bom"} 
+* 1 [M3 tap]{: Class="bom"} 
 * 1 [piler]{: Class="bom"} 
+* 1 [Precision wire cutter]{: Class="bom"} 
+* 1 [RepRap-style printer]{: Class="bom"} 
 * 1 [screwdriver]{: Class="bom"} 
 * 1 [soldering iron]{: Class="bom"} 
+* 1 [Tap wrench]{: Class="bom"} 
+* 1 [utility knife]{: Class="bom"}    - Not a scalpel!
 
 
-### Printed tools
-
-* 1 [gripper]{: Class="bom"} 
-* 1 [nut pusher]{: Class="bom"} 
-
-
-### Printed parts
+### Printed Parts
 
 * 1 [actuator foot]{: Class="bom"} 
 * 1 [base of the light holder]{: Class="bom"} 
@@ -50,6 +51,19 @@ Download this as a [CSV file](index_BOM.csv)
 * 4 [upper legs]{: Class="bom"} 
 
 
+### Printed Tools
+
+* 1 [gripper]{: Class="bom"} 
+* 1 [nut pusher]{: Class="bom"} 
+
+
+### Materials
+
+* 1 [Acrylic sheet]{: Class="bom"} 
+* 50 g of [Black PLA filament]{: Class="bom"} 
+* 200 g of [PLA filament]{: Class="bom"}    - Of any colour you want
+
+
 ### Laser cut parts
 
 * 1 [middle plate]{: Class="bom"} 
@@ -59,6 +73,16 @@ Download this as a [CSV file](index_BOM.csv)
 ### STL
 
 * 1 [Stl files]{: Class="bom"} 
+[PLA filament]:parts/materials/pla_filament.md ""
+[Black PLA filament]:parts/materials/black_pla_filament.md ""
+[RepRap-style printer]:parts/tools/rep-rap.md ""
+[Precision wire cutter]:parts/tools/precision-wire-cutters.md ""
+[utility knife]:parts/tools/utility-knife.md ""
+[Acrylic sheet]:parts/materials/acrylic_sheet.md ""
+[Laser cutting machine]:parts/tools/laser_cutting_machine.md ""
+[Tap wrench]:parts/tools/tap_wrench.md ""
+[M3 tap]:parts/tools/m3_tap.md ""
+[lubricant]:parts/consumables/tap_lubricant.md ""
 [Stl files]:stls.md ""
 [heat inserts]:Hinsert.md ""
 [upper plate]:PMMA.md ""
@@ -98,4 +122,4 @@ Download this as a [CSV file](index_BOM.csv)
 
 ---
 
-[Previous page](index.md) | [Next page](testpage1.md)
+[Previous page](index.md) | [Next page](printing.md)
