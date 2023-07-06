@@ -41,7 +41,7 @@ DefaultCategory: Part
 
 Navigation:
   - Link: 2-level-station.md
-    Title: Build the 2-levels microscope station
+    Title: Build the 2-level microscope station
   - Link: software-installation.md
     Title: Software Installation
   - Link: usage.md

@@ -1,4 +1,4 @@
-# 2-Levels Microscope Station
+# 2-Level Microscope Station
 
 This is a variant of the Strobe-Enhanced Microscope Station. It is still a fully functioning laboratory grade microscope for imaging fast-moving objects.
 
