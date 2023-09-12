@@ -1,45 +1,44 @@
 Name in documentation	Category	Qty	Full Name	Notes
 #1 pozidrive screwdriver	tool	1		
+1.5mm Ball-end Allen key	tool	1		
 2 pin Du Pont connector female housing	electronic	1		
 2.5mm Ball-end Allen key	tool	1		
 30x30x10mm Heat sink	electronic	1		
 52x18x0.5cm Acrylic sheet	material	1		
-8.7° 20 mm Circular Beam Optic	optical	1		
 Black PLA filament	material	50 g		
+Conductor Flexible Cables	electronic	2		
 Crimper	tool	1		
 Double-sided self adhesive tape	electronic	1		
 Double-sided thermal tape	electronic	1		
-Heat-set insert	mechanic	7		
+Heat insert	mechanic	7	Heat inserts	
 High-power star LED	electronic	1		
 Laser cutting machine	tool	1		
-light oil	consumable	1 drop		
-Lubricant	consumable	a little		
-M3 brass nut	mechanic	1		
-M3 nut	mechanic	9		
-M3 tap	tool	1		
-M3 washers	mechanic	2		
-M3x10mm cap head screw	mechanic	11		
-M3x15mm cap head screw	mechanic	4		
-M3x20mm cap head screw	mechanic	1		
-M3x25mm hex head screw	mechanic	1		
-M3x6mm cap head screw	mechanic	2		
+light oil	consumable	1 drop		Optional
+M2x5mm cap head screw	mechanic	4	Screw	
+M3 nut	mechanic	6		
+M3 washers	mechanic	2	Screw washer	
+M3x10mm cap head screw	mechanic	11	Screw	
+M3x15mm cap head screw	mechanic	4	Screw	
+M3x20mm pozi pan head screw	mechanic	1	M3 X Screw	
+M3x25mm cap head screw	mechanic	None	Screw	
+M3x25mm hex head screw	mechanic	1	M3 HEX screw	
+M3x8mm cap head screw	mechanic	2	Screw	
 Male Crimp Pin	electronic	2		
 Needle-nose plier	tool	1		
-No 2 6.5mm self tapping screws	mechanic	4		
+Nitrile gloves	consumable	3		
 O-ring	mechanic	1		
-Pi Camera lens tool	tool	1		This should come with the [Raspberry Pi Camera Module v2].  If it is missing, you can 3D print a workaround lens remover.
+Pi Camera lens tool	tool	1		This should come with the Raspberry Pi Camera Module. If it is missing, you can 3D print a workaround lens remover.
 Pi camera ribbon cable	electronic	1		
-Pi Hat	electronic	1		
+Pi Hat	electronic	1		This is a custom open-source board documented [here](https://github.com/wenzel-lab/open-microfluidics-workstation/)
 PLA filament	material	205 g		Of any colour you want
 Precision wire cutter	tool	1		
 Raspberry Pi	electronic	1		
 Raspberry Pi Camera Module v2	electronic	1		
-Raspberry Pi Power Supply	electronic	1		
 RepRap-style printer	tool	1		
 Soldering iron	tool	1		
-Strobe Cable	electronic	1		
-Strobe Module	electronic	1		
-Strobe Power Supply	electronic	1		
-Tap wrench	tool	1		
+Standoff-S-cone	printedpart	4		
+Star-LED lens	optical	1		
+Strobe Cable	electronic	1		This is a custom connector documented [here](https://github.com/wenzel-lab/open-microfluidics-workstation/)
+Strobe Module	electronic	1		This is a custom open-source board documented [here](https://github.com/wenzel-lab/open-microfluidics-workstation/)
+Tweezers	tool	1		
 Utility knife	tool	1		Not a scalpel!
-Voltage regulator	electronic	1		
