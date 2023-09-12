@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Strobe-Enhanced Microscope Station</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+
+    <link href="./static/style.css" rel="stylesheet">
+                <link href="./assets/style.css" rel="stylesheet">
+                
+</head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <div class=header-text>
+   
+    <h1 class="site-title">Strobe-Enhanced Microscope Station</h1>
+   
+    <p class="author">by Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="affiliation">Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Strobe-Enhanced Microscope Station
+    </a>
+</li>
+<li class="active">
+    <a class="active" href="./2-level-station.html">
+        Build the 2-level microscope station
+    </a>
+        <ul class="sub-nav-list">
+                <li>
+            <a class="not-active" href="./2-level-station_BOM.html">
+                Bill of Materials
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./printing.html">
+                Print the plastic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./laser-cutting.html">
+                Laser cut the acrylic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./assemble-focus-mechanism.html">
+                Assemble the focus mechanism
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./basic-optics-module.html">
+                Assemble the basic optics module
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-top-plate.html">
+                Attach parts to the top plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-bottom-plate.html">
+                Attach parts to the middle plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./mount-optics.html">
+                Mount the optics
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./illumination.html">
+                Assemble the illumination
+            </a>
+        </li>
+                <li>
+            <a class="active" href="./wiring.html">
+                Complete the wiring
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./finished.html">
+                Assembly complete
+            </a>
+        </li>
+            </ul>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./software-installation.html">
+        Software Installation
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./usage.html">
+        Use your Station
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./troubleshooting.html">
+        Troubleshooting
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./knowledge_base.html">
+        Knowledge base
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="complete-the-wiring">Complete the wiring</h1>
+<p>These instructions assume you are using a Raspberry Pi v4, a Pi Hat, and the Strobe module.</p>
+<div class="pagebom">
+<h3 id="tool">Tools</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/tools/tweezers.html">Tweezers</a> </li>
+</ul>
+<h3 id="consumable">Consumables</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/consumables/gloves.html">Nitrile gloves</a> </li>
+</ul>
+<h3 id="electronic">Electronic Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/elect/pi-hat.html">Pi Hat</a>    - This is a custom open-source board documented <a href="https://github.com/wenzel-lab/open-microfluidics-workstation/" target="_blank" title="">here</a></li>
+<li>1 <a Class="bom" href="parts/elect/rpi-v4.html">Raspberry Pi</a> </li>
+<li>1 <a Class="bom" href="parts/elect/strobe-cable.html">Strobe Cable</a>    - This is a custom connector documented <a href="https://github.com/wenzel-lab/open-microfluidics-workstation/" target="_blank" title="">here</a></li>
+<li>1 <a Class="bom" href="parts/elect/strobe-module.html">Strobe Module</a>    - This is a custom open-source board documented <a href="https://github.com/wenzel-lab/open-microfluidics-workstation/" target="_blank" title="">here</a></li>
+</ul>
+<h3 id="mechanic">Mechanical Components</h3>
+</div>
+<div class="caution-block">
+<p><strong>Caution</strong> </p>
+<p>Use <a href="parts/tools/tweezers.html">tweezers</a> and <a href="parts/consumables/gloves.html">gloves</a> to avoid directly touching the electronic components. This can avoid accidental damages.</p>
+</div>
+<h2 class="page-step" id="connect-the-camera">Step 1: Connect the camera</h2>
+<ul>
+<li>Insert the ribbon cable from the optics module into the camera port of the <a href="parts/elect/rpi-v4.html">Raspberry Pi</a>, ensuring the contacts are on the opposite side of the clasp. There are <a href="https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2" target="_blank" title="">detailed instructions on the Raspberry Pi website</a>.</li>
+</ul>
+<p><img alt="" src="images/RPi_RibbonCable.jpg" title="" /></p>
+<h2 class="page-step" id="prepare-the-electronics">Step 2: Prepare the electronics</h2>
+<ul>
+<li>Place the <a href="parts/elect/strobe-module.html">strobe module</a> over the <a href="parts/elect/pi-hat.html">Pi hat</a>.</li>
+<li>Mount the Pi hat on the Raspberry Pi GPIO headers. There is a space to place the ribbon cable.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/Pi-Hat_StrobeModule.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/RPi_Pi-Hat.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/RPi_Pi-Hat_1.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/Pi-Hat_StrobeModule.jpg" alt=""/></div>
+<ul>
+<li>Connect the 5-pin double row DuPont female connector of the <a href="parts/elect/strobe-cable.html">strobe cable</a> to the Pi hat.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/RPi_Pi-Hat_StrobeCable.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/RPi_Pi-Hat_StrobeCable_1.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show1" src="images/RPi_Pi-Hat_StrobeCable.jpg" alt=""/></div>
+<hr />
+<p><a href="illumination.html">Previous page</a> | <a href="finished.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2023 Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="email">Contact: <a href="mailto:librehub@uc.cl">librehub@uc.cl</a></p>
+    <p class="license">Strobe-Enhanced Microscope Station is released under <a href="license.html">CERN-OHL-1.2</a>.</p>
+
+    </div>
+</footer></body>
+</html>

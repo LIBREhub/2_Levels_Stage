@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Strobe-Enhanced Microscope Station</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+
+    <link href="./static/style.css" rel="stylesheet">
+                <link href="./assets/style.css" rel="stylesheet">
+                
+</head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <div class=header-text>
+   
+    <h1 class="site-title">Strobe-Enhanced Microscope Station</h1>
+   
+    <p class="author">by Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="affiliation">Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Strobe-Enhanced Microscope Station
+    </a>
+</li>
+<li class="active">
+    <a class="active" href="./2-level-station.html">
+        Build the 2-level microscope station
+    </a>
+        <ul class="sub-nav-list">
+                <li>
+            <a class="not-active" href="./2-level-station_BOM.html">
+                Bill of Materials
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./printing.html">
+                Print the plastic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./laser-cutting.html">
+                Laser cut the acrylic parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./assemble-focus-mechanism.html">
+                Assemble the focus mechanism
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./basic-optics-module.html">
+                Assemble the basic optics module
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-top-plate.html">
+                Attach parts to the top plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./attach-parts-to-bottom-plate.html">
+                Attach parts to the middle plate
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./mount-optics.html">
+                Mount the optics
+            </a>
+        </li>
+                <li>
+            <a class="active" href="./illumination.html">
+                Assemble the illumination
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./wiring.html">
+                Complete the wiring
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="./finished.html">
+                Assembly complete
+            </a>
+        </li>
+            </ul>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./software-installation.html">
+        Software Installation
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./usage.html">
+        Use your Station
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./troubleshooting.html">
+        Troubleshooting
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./knowledge_base.html">
+        Knowledge base
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="assemble-the-illumination">Assemble the illumination</h1>
+<div class="pagebom">
+<h3 id="tool">Tools</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/tools/screwdriver.html">#1 pozidrive screwdriver</a> </li>
+<li>1 <a Class="bom" href="parts/tools/2.5mmBallEndAllenKey.html">2.5mm Ball-end Allen key</a> </li>
+<li>1 <a Class="bom" href="parts/tools/crimper.html">Crimper</a> </li>
+<li>1 <a Class="bom" href="parts/tools/pliers.html">Needle-nose plier</a> </li>
+<li>1 <a Class="bom" href="parts/tools/precision-wire-cutters.html">Precision wire cutter</a> </li>
+<li>1 <a Class="bom" href="parts/tools/soldiron.html">Soldering iron</a> </li>
+</ul>
+<h3 id="printedpart">Printed Parts</h3>
+<ul>
+<li>1 <a Class="bom" href="models/arm-pin.html">Hinge pin</a> </li>
+<li>1 <a Class="bom" href="models/led-arm.html">Illumination arm</a> </li>
+<li>1 <a Class="bom" href="models/illumination-base.html">Illumination base</a> </li>
+<li>1 <a Class="bom" href="models/illumination-slider.html">Illumination slider</a> </li>
+<li>1 <a Class="bom" href="models/illumination-thumbscrew.html">Illumination thumbscrew</a> </li>
+<li>1 <a Class="bom" href="models/led-cover.html">LED cover</a> </li>
+</ul>
+<h3 id="consumable">Consumables</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/consumables/gloves.html">Nitrile gloves</a> </li>
+</ul>
+<h3 id="optical">Optical Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/optics/8.7-20mm-circular-lens.html">Star-LED lens</a> </li>
+</ul>
+<h3 id="electronic">Electronic Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/elect/2pin-DuPont-female-housing.html">2 pin Du Pont connector female housing</a> </li>
+<li>1 <a Class="bom" href="parts/elect/30x30x10mm-heatsink.html">30x30x10mm Heat sink</a> </li>
+<li>2 <a Class="bom" href="parts/elect/protoboard-cables.html">Conductor Flexible Cables</a> </li>
+<li>1 <a Class="bom" href="parts/elect/double-sided-adhesive-tape.html">Double-sided self adhesive tape</a> </li>
+<li>1 <a Class="bom" href="parts/elect/double-sided-thermal-tape.html">Double-sided thermal tape</a> </li>
+<li>1 <a Class="bom" href="parts/elect/high-power-star-LED.html">High-power star LED</a> </li>
+<li>2 <a Class="bom" href="parts/elect/male-crimp-pin.html">Male Crimp Pin</a> </li>
+</ul>
+<h3 id="mechanic">Mechanical Components</h3>
+<ul>
+<li>1 <a Class="bom" href="parts/mech/Hinsert.html">Heat insert</a> </li>
+<li>4 <a Class="bom" href="parts/mech/nuts.html">M3 nut</a> </li>
+<li>3 <a Class="bom" href="parts/mech/M3-10.html">M3x10mm cap head screw</a> </li>
+<li>1 <a Class="bom" href="parts/mech/X-M3-20.html">M3x20mm pozi pan head screw</a> </li>
+</ul>
+</div>
+<p>In this section, we are assembling the strobe illuminator. This mounts the high-power LED and condenser lens above the sample so the microscope can image the transmitted light.</p>
+<h2 class="page-step" id="mount-the-base">Step 1: Mount the base</h2>
+<ul>
+<li>Place the <a href="models/illumination-base.html">illuminator base</a> onto the <a href="parts/materials/top-plate.html">top plate</a> in opposite orientation to the focusing actuator.</li>
+<li>Secure in place with three <a href="parts/mech/M3-10.html">M3x10mm screws</a> and three <a href="parts/mech/nuts.html">M3 nuts</a> (using a <a href="parts/tools/2.5mmBallEndAllenKey.html">2.5mm Ball-end Allen key</a>)</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/mount_base.png" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/mount_base_1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/mount_base_2.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/mount_base.png" alt=""/></div>
+<h2 class="page-step" id="assemble-the-slider">Step 2: Assemble the slider</h2>
+<p><strong>2.1) illuminator thumbscrew</strong></p>
+<ul>
+<li>Push a <a href="parts/mech/nuts.html">M3 nut</a> into the slot in the <a href="models/illumination-thumbscrew.html">illuminator thumbscrew</a>.</li>
+<li>Screw a <a href="parts/mech/X-M3-20.html">M3x20mm pozi pan head screw</a> into the <a href="models/illumination-thumbscrew.html">thumbscrew</a>. Use a <a href="parts/tools/screwdriver.html">#1 pozidrive screwdriver</a>.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/thumbscrew.png" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/thumbscrew_1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/thumbscrew_2.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show1" src="images/thumbscrew.png" alt=""/></div>
+
+<div class="caution-block">
+<p>Be sure to properly clean the nut and screw holes before using them, if not it might break.</p>
+</div>
+<div class="info-block">
+<p>If the screw don´t go fully inside, you can do it with a plier and a screwdriver.</p>
+</div>
+<p><strong>2.2) Illuminator slider:</strong></p>
+<ul>
+<li>Positionate a <a href="parts/mech/Hinsert.html">heat insert</a> in the round hole of the <a href="models/illumination-slider.html">illuminator slider</a></li>
+<li>Apply heat to the <a href="parts/mech/Hinsert.html">insert</a> (using a <a href="parts/tools/soldiron.html">soldering iron</a>) and use gentle force to push it into position as decribed in the <a href="https://hackaday.com/2019/02/28/threading-3d-printed-parts-how-to-use-heat-set-inserts/">guide to use heat inserts</a>.</li>
+<li>Screw the <a href="models/illumination-thumbscrew.html">thumbscrew</a> assembly into the <a href="parts/mech/Hinsert.html">heat insert</a> in the <a href="models/illumination-slider.html">illuminator slider</a>.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/slider-insert.png" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/heat-set_insert.gif" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/slider-insert_1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/thumbscrew-slider_1.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show2" src="images/slider-insert.png" alt=""/></div>
+
+<div class="warning-block">
+<p><strong>Warning</strong> </p>
+<p>To ensure the slider works properly, it is necesary for the thinner section of the <em>illuminator slider</em> to break. This can be done using a plier.</p>
+</div>
+<h2 class="page-step" id="mount-the-light-holder">Step 3: Mount the light holder</h2>
+<ul>
+<li>Put the <a href="models/illumination-slider.html">illumination slider</a> together with <a href="models/led-arm.html">illumination arm</a>, and align the holes.</li>
+<li>Use a <a href="models/arm-pin.html">hinge pin</a> to connect them. Insert it into the rectagular side of the <a href="models/illumination-slider.html">slider</a>.</li>
+<li>It should take a little bit of force to push it through the holes. A <a href="parts/tools/pliers.html">needle-nose plier</a> can be useful.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/arm-slider.png" alt="" />
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/arm-slider_1.png" alt="" />
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/arm-slider_2.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show3" src="images/arm-slider.png" alt=""/></div>
+<h2 class="page-step" id="assemble-the-condenser-lens-led-and-heatsink">Step 4: Assemble the condenser lens, LED, and heatsink</h2>
+<div class="warning-block">
+<p>For this step use <a href="parts/consumables/gloves.html">Nitrile gloves</a></p>
+</div>
+<ul>
+<li>Fasten a <a href="parts/elect/high-power-star-LED.html">high-power LED</a> to a <a href="parts/elect/30x30x10mm-heatsink.html">heat sink</a> using a <a href="parts/elect/double-sided-thermal-tape.html">double-sided thermal tape</a> as described in this <a href="https://youtu.be/ZD3UFZiaZ74">guide</a>. </li>
+<li>To fit the cables, make a V cut in the <a href="parts/optics/8.7-20mm-circular-lens.html">20 mm circular lens</a> using <a href="parts/tools/precision-wire-cutters.html">Precision wire cutter</a>, following the direction of the existing space. </li>
+<li>Fasten the assembly to a <a href="parts/optics/8.7-20mm-circular-lens.html">20 mm circular lens</a> using a <a href="parts/elect/double-sided-adhesive-tape.html">double-sided self adhesive tape</a> as described in this <a href="https://youtu.be/DwR9CUMfGJU">guide</a>.</li>
+<li>This is the final assembly</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show4').src=this.src" src="images/LED3.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show4').src=this.src" src="images/LED4.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show4').src=this.src" src="images/LED1.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show4').src=this.src" src="images/LED.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show4" src="images/LED3.jpg" alt=""/></div>
+<h2 class="page-step" id="assemble-the-illumination-wiring">Step 5: Assemble the illumination wiring</h2>
+<ul>
+<li>Take the red and black <a href="parts/elect/protoboard-cables.html">cables</a> of the illumination assembly and crimp them using two <a href="parts/elect/male-crimp-pin.html">male connectors</a> and a <a href="parts/tools/crimper.html">crimper</a> as described in this <a href="https://youtu.be/jET1QTP1B7c">guide</a>.</li>
+<li>Attach a <a href="parts/elect/2pin-DuPont-female-housing.html">2 pin Du Pont connector female housing</a> to it.</li>
+<li>This is the illumination wiring</li>
+</ul>
+<p><img alt="" src="images/2pin-du-pont-connector.png" title="" /></p>
+<h2 class="page-step" id="mount-the-illumination-assembly">Step 6: Mount the illumination assembly</h2>
+<ul>
+<li>Position the illumination assembly in the <a href="models/led-arm.html">illumination arm</a>. One side of the LED holder has a space for cables.</li>
+<li>Secure the assembly using a <a href="models/led-cover.html">cover</a>.There is also space for cables, use it as reference.</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show5').src=this.src" src="images/led-assembly-arm.png" alt="" />
+    <img onmouseover="getElementById('gallery-show5').src=this.src" src="images/led-assembly-arm_1.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show5').src=this.src" src="images/led-assembly-arm_2.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show5').src=this.src" src="images/led-assembly-arm_3.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show5" src="images/led-assembly-arm.png" alt=""/></div>
+<h2 class="page-step" id="attach-the-illumination-wiring">Step 7: Attach the illumination wiring</h2>
+<ul>
+<li>Insert the illumination wiring to the cable clip next to LED holder</li>
+<li>Mount the <a href="models/led-arm.html">illumination arm</a> assembly to the <a href="models/illumination-base.html">base</a></li>
+<li>Insert the illumination wiring to the other cable clip in the <a href="models/illumination-base.html">base</a></li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show6').src=this.src" src="images/cable-clip.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show6').src=this.src" src="images/cable-clip_1.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show6').src=this.src" src="images/cable-clip_2.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show6').src=this.src" src="images/cable-clip_3.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show6" src="images/cable-clip.jpg" alt=""/></div>
+<h2 class="page-step" id="connect-the-strobe">Step 8: Connect the strobe</h2>
+<ul>
+<li>Connect DuPont female 2-pin connector of the strobe cable to the 2-pin male connector of the illumination wiring. Be careful to connect positive and negative terminals in wrong position.</li>
+</ul>
+<p><img alt="" src="images/DuPont-2PIN-Connector.jpg" title="" /></p>
+<hr />
+<p><a href="mount-optics.html">Previous page</a> | <a href="wiring.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2023 Matías Hurtado and Pierre Padilla-Huamantinco</p>
+    <p class="email">Contact: <a href="mailto:librehub@uc.cl">librehub@uc.cl</a></p>
+    <p class="license">Strobe-Enhanced Microscope Station is released under <a href="license.html">CERN-OHL-1.2</a>.</p>
+
+    </div>
+</footer></body>
+</html>
