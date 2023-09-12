@@ -34,11 +34,14 @@ PLA filament	material	205 g		Of any colour you want
 Precision wire cutter	tool	1		
 Raspberry Pi	electronic	1		
 Raspberry Pi Camera Module v2	electronic	1		
+Raspberry Pi Power Supply	electronic	1		
 RepRap-style printer	tool	1		
 Soldering iron	tool	1		
 Standoff-S-cone	printedpart	4		
 Star-LED lens	optical	1		
 Strobe Cable	electronic	1		This is a custom connector documented [here](https://github.com/wenzel-lab/open-microfluidics-workstation/)
 Strobe Module	electronic	1		This is a custom open-source board documented [here](https://github.com/wenzel-lab/open-microfluidics-workstation/)
+Strobe Power Supply	electronic	1	Strobe Power Supply	
 Tweezers	tool	1		
 Utility knife	tool	1		Not a scalpel!
+Voltage regulator	electronic	1		This regulator has modifications documented [here](https://github.com/wenzel-lab/open-microfluidics-workstation/)
