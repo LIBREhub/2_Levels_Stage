@@ -1,7 +1,8 @@
 Affiliation: Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)
 Authors:
-  - Matías Hurtado
   - Pierre Padilla-Huamantinco
+  - Matías Hurtado Labarca
+  - Tobias Wenzel
 CustomCategories:
   Consumable:
     DisplayName: Consumables
@@ -36,6 +37,6 @@ Navigation:
     Title: Software Installation
   - Link: usage.md
     Title: Use your Station
+hoverColor: '#555555'
 primaryColor: '#f1502f'
 secondaryColor: '#cccccc'
-hoverColor: '#555555'
