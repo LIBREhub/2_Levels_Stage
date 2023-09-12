@@ -1,31 +1,43 @@
-# Attach parts to the bottom plate
+# Attach parts to the middle plate
 
 {{BOM}}
 
-[M3x10mm cap head screw]: parts/mech/m3x10_screw.md "{cat:mechanic}"
-[M3x15mm cap head screw]: parts/mech/m3x15_screw.md "{cat:mechanic}"
-[M3 nut]: parts/mech/m3_nut.md "{cat:mechanic}"
-[Bottom plate]: parts/materials/bottom-plate.md "{cat:lasercutpart}"
+[M3x10mm cap head screw]: parts/mech/M3-10.md "{cat:mechanic}"
+[M3x15mm cap head screw]: parts/mech/M3-15.md "{cat:mechanic}"
+[M3 nut]: parts/mech/nuts.md "{cat:mechanic}"
+[Middle plate]: parts/materials/middle-plate.md "{cat:lasercutpart}"
 [2.5mm Ball-end Allen key]: parts/tools/2.5mmBallEndAllenKey.md "{cat:tool}"
-[Focusing assembly]: models/focusing-assembly.stl "{previewpage}"
-[Standoff]: models/standoff.stl "{previewpage}"
-[Foot]: models/foot.stl "{previewpage}"
+[Nut tool]: models/actuator-assembly-tools.stl "{previewpage}"
+[Standoff-S-cone]: models/standoff_S_cone.stl "{previewpage}"
+[Standoff-M]: models/standoff-M.stl "{previewpage}"
 
 You will also need the parts you assembled in previous sections.
 
 ## Screw into the focusing assembly {pagestep}
 
-* Attach the [bottom plate][Bottom plate](fromstep){qty:1} to the [focusing assembly][Focusing assembly] using 3 [M3x10mm cap head screws][M3x10mm cap head screw]{qty: 3}.
+* Attach the [middle plate][Middle plate](fromstep){qty:1} to the [focusing mechanism](fromstep) using 3 [M3x10mm cap head screws][M3x10mm cap head screw]{qty: 3}.
 * Use a [2.5mm ball-ended hex key][2.5mm Ball-end Allen key]{qty:1} to turn the screws.
 
-![](images/bottom_plate_to_focus.png)
+![](images/middle_plate_to_focus.jpg)
+![](images/middle_plate_to_focus_1.jpg)
 
-## Attach feet {pagestep}
+## Attach the small standoffs {pagestep}
 
-* Take an [M3 nut]{qty:4} and push it into the nut trap from the [standoff][Standoff]. Insert one into each of standoff.
-* Using four [M3x15mm cap head screws][M3x15mm cap head screw]{qty:4} and a [2.5mm ball-ended hex key][2.5mm Ball-end Allen key]{qty:1}, attach the [feet][Foot](fromstep){qty:4, cat:printedpart} by inserting the screw into the foot, then screwing into the [standoff][Standoff] through the hole in the [bottom plate][Bottom plate].
+* Insert a [M3 nut] into the nut trap of the [standoff][Standoff-M] (using the [nut insertion tool][Nut tool](fromstep){qty:1, cat:printedtool}). Do the same for the four standoffs.
+
+![](images/standoff-screw.jpg)
+![](images/standoff-screw_1.jpg)
+
+* Insert a [M3x15mm cap head screw]{qty: 4} into each small [standoff][Standoff-S-cone]{qty: 4, cat:printedpart} using the large hole that comes out the side of the [standoff][Standoff-S-cone]. The screw should poke out the end of the part as shown.
+* Use a [2.5mm ball-ended hex key][2.5mm Ball-end Allen key]{qty:1} to turn the screw.
 
 ![](images/feet_unattached.png)
-![](images/feet_attachment.png)
 
-At this point, the main structure is complete.
+* Attach each small [standoff][Standoff-S-cone] to one of the corners of the [middle plate][Middle plate].
+* Use the [nut insertion tool][Nut tool] and the [2.5mm ball-ended hex key][2.5mm Ball-end Allen key] to secure the three parts together
+
+
+
+![](images/feet_attachment.jpg)
+
+
